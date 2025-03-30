@@ -1,0 +1,73 @@
+/*-----Обнуление-----*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;
+    line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+
+:root{
+    --primary-color: #FFFFFF;
+    --secondary-color: #526E3E;
+    --third-color: #EDDBBE;
+    --font-family-sans-serif: "Roboto", sans-serif;
+}
+
+body {
+    overflow-x: hidden
+}
+
+.gap-16{ gap: 16px }
+.gap-17{ gap: 17px }
+.gap-18{ gap: 18px }
+.gap-19{ gap: 19px }
+.gap-22{ gap: 22px }
+.gap-23{ gap: 23px }
+.gap-24{ gap: 24px }
+.gap-31{ gap: 31px }
+.gap-34{ gap: 34px }
+.gap-41{ gap: 41px }
+
+.text-xs { font-size: 12px; }
+.text-sm { font-size: 13px; }
+.text-base { font-size: 16px; }
+.text-lg { font-size: 17px; }
+.text-xl { font-size: 28px; }
+.text-2xl { font-size: 30px; }
+.text-3xl { font-size: 38px; }
+.text-4xl { font-size: 57px; }
+
+.text-normal { font-weight: 400; }
+.text-bold { font-weight: 700; }
+
+.text-nowrap { white-space: nowrap; }
+
+.flex{
+    display: flex;
+}
+.center-vertical{
+    align-items: center;
+}
+.start-vertical{
+    align-items: center;
+}
+.center-horizontal{
+    justify-content: center;
+}
+
+.upend{
+    flex-direction: column;
+}
+.wrap{
+    flex-wrap: wrap;
+}
