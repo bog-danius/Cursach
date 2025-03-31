@@ -31,12 +31,15 @@ body {
 .gap-17{ gap: 17px }
 .gap-18{ gap: 18px }
 .gap-19{ gap: 19px }
+.gap-20{ gap: 20px }
 .gap-22{ gap: 22px }
 .gap-23{ gap: 23px }
 .gap-24{ gap: 24px }
 .gap-31{ gap: 31px }
 .gap-34{ gap: 34px }
 .gap-41{ gap: 41px }
+.gap-46{ gap: 46px }
+.gap-70{ gap: 70px }
 
 .text-xs { font-size: 12px; }
 .text-sm { font-size: 13px; }
@@ -49,7 +52,7 @@ body {
 
 .text-normal { font-weight: 400; }
 .text-bold { font-weight: 700; }
-
+.text-style-normal{ font-style: normal; }
 .text-nowrap { white-space: nowrap; }
 
 .flex{
