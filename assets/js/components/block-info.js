@@ -13,7 +13,7 @@ class block extends HTMLElement {
                 <img src="${img1}" alt="Cursach" class="info__block-img">
                 <div class="info__block-text flex upend center-horizontal center-vertical">
                     <div class="flex upend gap-31">
-                        <div class=" flex upend gap-41">
+                        <div class="info__block_text-logo flex upend gap-41">
                             <img src="${img2}" alt="Cursach Logo" class="info__block-text-logo-img">
                             <p class="info__block-text-even-logo text-bold text-2xl text-style-normal">${logo}</p>
                         </div>

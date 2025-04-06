@@ -1,0 +1,13 @@
+@media (min-width: 769px) {
+    .info__block {
+    }
+
+    .info__block-img {
+        width: 50%;
+    }
+
+    .info__block-text {
+        width: 50%;
+    }
+}
+
