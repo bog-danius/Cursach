@@ -70,6 +70,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: inherit;
     font-weight: inherit;
 }
+
 :root {
     --primary-color: #FFFFFF;
     --secondary-color: #526E3E;
@@ -78,9 +79,30 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .dark-theme {
-    --primary-color: #121212;       /* Глубокий тёмный фон (вместо белого) */
-    --secondary-color: #154215;     /* Сочный зелёный (светлее исходного #526E3E) */
-    --third-color: #EDDBBE;         /* Кремовый акцент (сохраняется) */
+    --primary-color: #121212; /* Глубокий тёмный фон (вместо белого) */
+    --secondary-color: #154215; /* Сочный зелёный (светлее исходного #526E3E) */
+    --third-color: #EDDBBE; /* Кремовый акцент (сохраняется) */
+}
+
+.language-switcher {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.language-btn {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.language-btn.active {
+    background: #333;
+    color: #fff;
 }
 
 body {
@@ -140,6 +162,7 @@ body {
 .gap-70 {
     gap: 70px
 }
+
 .text-xs {
     font-size: 12px;
 }
@@ -199,9 +222,11 @@ body {
 .center-horizontal {
     justify-content: center;
 }
+
 .between-horizontal {
     justify-content: space-between;
 }
+
 .upend {
     flex-direction: column;
 }

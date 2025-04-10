@@ -29,6 +29,7 @@
     .toggle-container {
         margin-top: 20px;
     }
+
     .info__block {
         align-items: center;
         justify-content: center;
@@ -49,18 +50,21 @@
         text-align: center;
     }
 }
+
 @media (max-width: 1130px) {
-    .footer__block{
+    .footer__block {
         gap: 18px;
     }
 }
+
 @media (max-width: 980px) {
-    .footer__block{
+    .footer__block {
         flex-direction: column;
         align-items: flex-start;
         padding-left: 5vw;
     }
-    .footer__block-nav{
+
+    .footer__block-nav {
         flex-wrap: wrap;
     }
 }

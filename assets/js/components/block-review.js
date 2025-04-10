@@ -1,12 +1,26 @@
 class BlockReview extends HTMLElement {
     constructor() {
         super();
-        const starsCount = parseInt(this.getAttribute('stars'));
-        const info = this.getAttribute('info');
-        const text = this.getAttribute('text');
-        const starSrc = this.getAttribute('star-img');
+        this.render();
+    }
 
-        const stars = Array.from({ length: starsCount }, () =>
+    static get observedAttributes() {
+        return ['stars', 'info', 'text', 'star-img'];
+    }
+
+    attributeChangedCallback(name, oldValue, newValue) {
+        if (oldValue !== newValue) {
+            this.render();
+        }
+    }
+
+    render() {
+        const starsCount = parseInt(this.getAttribute('stars')) || 0;
+        const info = this.getAttribute('info') || '';
+        const text = this.getAttribute('text') || '';
+        const starSrc = this.getAttribute('star-img') || '';
+
+        const stars = Array.from({length: starsCount}, () =>
             `<img src="${starSrc}" alt="star">`
         ).join('');
 
@@ -17,6 +31,10 @@ class BlockReview extends HTMLElement {
                 <p class="review__block-text text-sm text-style-normal text-normal">${text}</p>
             </div>
         `;
+    }
+
+    updateContent(newText) {
+        this.setAttribute('text', newText);
     }
 }
 
