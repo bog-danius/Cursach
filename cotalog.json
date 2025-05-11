@@ -1,0 +1,484 @@
+{
+  "services": [
+    {
+      "id": "1",
+      "name": "Продвижение в Instagram и TikTok",
+      "category": "SMM",
+      "price": 138,
+      "rating": 4.8,
+      "description": "Комплексное продвижение вашего косметического бренда в социальных сетях.",
+      "image": "https://example.com/cosmetic-smm.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Публикация в бьюти-блогах",
+      "category": "Медиа",
+      "price": 230,
+      "rating": 4.6,
+      "description": "Размещение вашей косметики на популярных бьюти-блогах и платформах.",
+      "image": "https://example.com/beauty-blogs.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Таргетированная реклама для косметики",
+      "category": "Реклама",
+      "price": 184,
+      "rating": 4.9,
+      "description": "Настройка рекламных кампаний для целевой аудитории в косметической нише.",
+      "image": "https://example.com/cosmetic-ads.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Участие в бьюти-выставках",
+      "category": "Мероприятия",
+      "price": 322,
+      "rating": 4.5,
+      "description": "Организация участия вашего бренда в косметических выставках.",
+      "image": "https://example.com/beauty-expo.jpg"
+    },
+    {
+      "id": "5",
+      "name": "YouTube-продвижение для бренда",
+      "category": "Видео",
+      "price": 166,
+      "rating": 4.7,
+      "description": "Увеличение охватов и вовлеченности для вашего бьюти-канала.",
+      "image": "https://example.com/beauty-youtube.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Коллаборации с бьюти-блогерами",
+      "category": "Партнерства",
+      "price": 203,
+      "rating": 4.4,
+      "description": "Организация сотрудничества с популярными бьюти-инфлюенсерами.",
+      "image": "https://example.com/influencer-collab.jpg"
+    },
+    {
+      "id": "7",
+      "name": "PR-кампания для косметического бренда",
+      "category": "PR",
+      "price": 370,
+      "rating": 4.8,
+      "description": "Полноценная PR-стратегия для продвижения косметики.",
+      "image": "https://example.com/cosmetic-pr.jpg"
+    },
+    {
+      "id": "8",
+      "name": "Продвижение в маркетплейсах",
+      "category": "E-commerce",
+      "price": 258,
+      "rating": 4.9,
+      "description": "Увеличение продаж на Wildberries, Ozon и других площадках.",
+      "image": "https://example.com/marketplace-promo.jpg"
+    },
+    {
+      "id": "9",
+      "name": "Организация мастер-классов",
+      "category": "Мероприятия",
+      "price": 462,
+      "rating": 4.6,
+      "description": "Проведение обучающих мероприятий по макияжу и уходу.",
+      "image": "https://example.com/beauty-workshop.jpg"
+    },
+    {
+      "id": "10",
+      "name": "Коллаборации с другими брендами",
+      "category": "Партнерства",
+      "price": 277,
+      "rating": 4.7,
+      "description": "Совместные проекты с другими косметическими компаниями.",
+      "image": "https://example.com/brand-collab.jpg"
+    },
+    {
+      "id": "11",
+      "name": "Фотосессия для каталога",
+      "category": "Контент",
+      "price": 138,
+      "rating": 4.5,
+      "description": "Профессиональная съемка косметики для сайта и соцсетей.",
+      "image": "https://example.com/product-photo.jpg"
+    },
+    {
+      "id": "12",
+      "name": "Ведение бьюти-аккаунта",
+      "category": "SMM",
+      "price": 184,
+      "rating": 4.8,
+      "description": "Полное ведение Instagram или TikTok с контентом о косметике.",
+      "image": "https://example.com/smm-management.jpg"
+    },
+    {
+      "id": "13",
+      "name": "Создание рекламных роликов",
+      "category": "Видео",
+      "price": 230,
+      "rating": 4.6,
+      "description": "Производство промо-видео для косметических продуктов.",
+      "image": "https://example.com/beauty-video.jpg"
+    },
+    {
+      "id": "14",
+      "name": "Публикации в глянцах",
+      "category": "PR",
+      "price": 422,
+      "rating": 4.7,
+      "description": "Размещение в печатных и онлайн-изданиях о красоте.",
+      "image": "https://example.com/magazine-feature.jpg"
+    },
+    {
+      "id": "15",
+      "name": "Анализ целевой аудитории",
+      "category": "Аналитика",
+      "price": 166,
+      "rating": 4.9,
+      "description": "Исследование ЦА для эффективного продвижения косметики.",
+      "image": "https://example.com/audience-analysis.jpg"
+    },
+    {
+      "id": "16",
+      "name": "Разработка упаковки",
+      "category": "Дизайн",
+      "price": 345,
+      "rating": 4.7,
+      "description": "Создание уникального дизайна для косметической упаковки.",
+      "image": "https://example.com/packaging-design.jpg"
+    },
+    {
+      "id": "17",
+      "name": "Организация бьюти-ивентов",
+      "category": "Мероприятия",
+      "price": 510,
+      "rating": 4.8,
+      "description": "Проведение запусков продуктов и встреч с блогерами.",
+      "image": "https://example.com/beauty-event.jpg"
+    },
+    {
+      "id": "18",
+      "name": "SEO-продвижение сайта",
+      "category": "Веб",
+      "price": 290,
+      "rating": 4.6,
+      "description": "Оптимизация сайта для привлечения клиентов из поиска.",
+      "image": "https://example.com/seo-promo.jpg"
+    },
+    {
+      "id": "19",
+      "name": "Разработка логотипа бренда",
+      "category": "Дизайн",
+      "price": 215,
+      "rating": 4.5,
+      "description": "Создание запоминающегося лого для косметической компании.",
+      "image": "https://example.com/logo-design.jpg"
+    },
+    {
+      "id": "20",
+      "name": "Тизер-кампания перед релизом",
+      "category": "Реклама",
+      "price": 380,
+      "rating": 4.7,
+      "description": "Создание ажиотажа перед запуском новой линейки.",
+      "image": "https://example.com/teaser-campaign.jpg"
+    },
+    {
+      "id": "21",
+      "name": "Организация онлайн-трансляций",
+      "category": "Мероприятия",
+      "price": 890,
+      "rating": 4.9,
+      "description": "Проведение прямых эфиров с визажистами и экспертами.",
+      "image": "https://example.com/live-streaming.jpg"
+    },
+    {
+      "id": "22",
+      "name": "Создание интернет-магазина",
+      "category": "Веб",
+      "price": 540,
+      "rating": 4.8,
+      "description": "Разработка сайта для продажи косметики.",
+      "image": "https://example.com/ecommerce-site.jpg"
+    },
+    {
+      "id": "23",
+      "name": "Продвижение в Telegram-каналах",
+      "category": "SMM",
+      "price": 175,
+      "rating": 4.6,
+      "description": "Реклама в популярных бьюти-пабликах.",
+      "image": "https://example.com/telegram-promo.jpg"
+    },
+    {
+      "id": "24",
+      "name": "Съемка обзоров продукции",
+      "category": "Видео",
+      "price": 420,
+      "rating": 4.7,
+      "description": "Профессиональные видео-обзоры косметики.",
+      "image": "https://example.com/product-review.jpg"
+    },
+    {
+      "id": "25",
+      "name": "Продвижение в Pinterest",
+      "category": "SMM",
+      "price": 230,
+      "rating": 4.5,
+      "description": "Увеличение вовлеченности через визуальный контент.",
+      "image": "https://example.com/pinterest-promo.jpg"
+    },
+    {
+      "id": "26",
+      "name": "Копирайтинг для бьюти-бренда",
+      "category": "Контент",
+      "price": 150,
+      "rating": 4.4,
+      "description": "Написание продающих текстов для упаковки и соцсетей.",
+      "image": "https://example.com/beauty-copywriting.jpg"
+    },
+    {
+      "id": "27",
+      "name": "Дизайн визиток и буклетов",
+      "category": "Дизайн",
+      "price": 95,
+      "rating": 4.3,
+      "description": "Создание полиграфии для бренда.",
+      "image": "https://example.com/print-design.jpg"
+    },
+    {
+      "id": "28",
+      "name": "Продвижение через отзывы",
+      "category": "Репутация",
+      "price": 210,
+      "rating": 4.6,
+      "description": "Работа с отзывами на площадках и в соцсетях.",
+      "image": "https://example.com/review-management.jpg"
+    },
+    {
+      "id": "29",
+      "name": "Email-рассылка для клиентов",
+      "category": "Маркетинг",
+      "price": 320,
+      "rating": 4.7,
+      "description": "Настройка рассылок о новинках и акциях.",
+      "image": "https://example.com/email-marketing.jpg"
+    },
+    {
+      "id": "30",
+      "name": "Организация розыгрышей",
+      "category": "SMM",
+      "price": 380,
+      "rating": 4.8,
+      "description": "Проведение конкурсов для увеличения аудитории.",
+      "image": "https://example.com/giveaway.jpg"
+    }
+  ],
+  "users": [
+    {
+      "id": "fc2c",
+      "firstName": "Jenesius",
+      "lastName": "Arhipzev",
+      "middleName": "",
+      "phone": "+375447203011",
+      "email": "Jenesius1998@gmail.com",
+      "dob": "2009-05-01",
+      "password": "C&u&U8R5ly*H",
+      "nickname": "Oguvut",
+      "role": "user",
+      "favorites": [
+        {
+          "id": "2",
+          "name": "Публикация в бьюти-блогах",
+          "category": "Медиа",
+          "price": 230,
+          "rating": 4.6,
+          "description": "Размещение вашей косметики на популярных бьюти-блогах и платформах.",
+          "image": "https://example.com/beauty-blogs.jpg"
+        },
+        {
+          "id": "4",
+          "name": "Участие в бьюти-выставках",
+          "category": "Мероприятия",
+          "price": 322,
+          "rating": 4.5,
+          "description": "Организация участия вашего бренда в косметических выставках.",
+          "image": "https://example.com/beauty-expo.jpg"
+        },
+        {
+          "id": "5",
+          "name": "YouTube-продвижение для бренда",
+          "category": "Видео",
+          "price": 166,
+          "rating": 4.7,
+          "description": "Увеличение охватов и вовлеченности для вашего бьюти-канала.",
+          "image": "https://example.com/beauty-youtube.jpg"
+        },
+        {
+          "id": "1",
+          "name": "Продвижение в Instagram и TikTok",
+          "category": "SMM",
+          "price": 138,
+          "rating": 4.8,
+          "description": "Комплексное продвижение вашего косметического бренда в социальных сетях.",
+          "image": "https://example.com/cosmetic-smm.jpg"
+        },
+        {
+          "id": "3",
+          "name": "Таргетированная реклама для косметики",
+          "category": "Реклама",
+          "price": 184,
+          "rating": 4.9,
+          "description": "Настройка рекламных кампаний для целевой аудитории в косметической нише.",
+          "image": "https://example.com/cosmetic-ads.jpg"
+        },
+        {
+          "id": "6",
+          "name": "Коллаборации с бьюти-блогерами",
+          "category": "Партнерства",
+          "price": 203,
+          "rating": 4.4,
+          "description": "Организация сотрудничества с популярными бьюти-инфлюенсерами.",
+          "image": "https://example.com/influencer-collab.jpg"
+        },
+        {
+          "id": "7",
+          "name": "PR-кампания для косметического бренда",
+          "category": "PR",
+          "price": 370,
+          "rating": 4.8,
+          "description": "Полноценная PR-стратегия для продвижения косметики.",
+          "image": "https://example.com/cosmetic-pr.jpg"
+        },
+        {
+          "id": "8",
+          "name": "Продвижение в маркетплейсах",
+          "category": "E-commerce",
+          "price": 258,
+          "rating": 4.9,
+          "description": "Увеличение продаж на Wildberries, Ozon и других площадках.",
+          "image": "https://example.com/marketplace-promo.jpg"
+        }
+      ],
+      "cart": []
+    },
+    {
+      "id": "6ae5",
+      "firstName": "Fsdf",
+      "lastName": "Sdsgv",
+      "middleName": "Sdfs",
+      "phone": "+375447203020",
+      "email": "koly@gmail.com",
+      "dob": "2009-04-29",
+      "password": "diRZ&sKOW3wF",
+      "nickname": "Aqofeda",
+      "role": "user",
+      "favorites": [],
+      "cart": []
+    },
+    {
+      "id": "2254",
+      "firstName": "Fkjbkjlb",
+      "lastName": "Djlbkjfg",
+      "middleName": "Dihoih",
+      "phone": "+375446829326",
+      "email": "jenesius2@gmail.com",
+      "dob": "2009-04-27",
+      "password": "54LpfO@VhL*i",
+      "nickname": "Emypib",
+      "role": "user",
+      "favorites": [],
+      "cart": []
+    },
+    {
+      "id": "admin1",
+      "firstName": "Admin",
+      "lastName": "Root",
+      "middleName": "",
+      "phone": "+375441112233",
+      "email": "admin@example.com",
+      "dob": "1990-01-01",
+      "password": "Admin@123",
+      "nickname": "RootAdmin",
+      "role": "admin",
+      "favorites": [],
+      "cart": []
+    }
+  ],
+  "orders": [
+    {
+      "id": "0d86",
+      "userId": "fc2c",
+      "nickname": "Oguvut",
+      "items": [
+        {
+          "productId": "2",
+          "quantity": 1
+        },
+        {
+          "productId": "3",
+          "quantity": 1
+        },
+        {
+          "productId": "4",
+          "quantity": 1
+        }
+      ],
+      "date": "2025-05-11T16:35:57.867Z"
+    },
+    {
+      "id": "cd9c",
+      "userId": "admin1",
+      "nickname": "RootAdmin",
+      "items": [
+        {
+          "productId": "1",
+          "quantity": 1
+        }
+      ],
+      "date": "2025-05-11T17:27:24.520Z"
+    },
+    {
+      "id": "c529",
+      "userId": "fc2c",
+      "nickname": "Oguvut",
+      "items": [
+        {
+          "productId": "2",
+          "quantity": 1
+        },
+        {
+          "productId": "3",
+          "quantity": 1
+        },
+        {
+          "productId": "4",
+          "quantity": 1
+        },
+        {
+          "productId": "5",
+          "quantity": 1
+        },
+        {
+          "productId": "7",
+          "quantity": 1
+        },
+        {
+          "productId": "6",
+          "quantity": 3
+        },
+        {
+          "productId": "1",
+          "quantity": 1
+        }
+      ],
+      "date": "2025-05-11T17:31:52.259Z"
+    }
+  ],
+  "feedback": [
+    {
+      "id": "c46e",
+      "userId": "fc2c",
+      "productId": "1",
+      "text": "dfdddddddddddddddd",
+      "date": "2025-05-11T17:32:01.688Z"
+    }
+  ]
+}

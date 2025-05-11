@@ -1,1 +1,13 @@
-console.log('Happy developing ✨')
+import "./src/css/basic-style.css"
+import "./src/css/style.css"
+import "./src/css/tablet-style.css"
+import "./src/css/phone-style.css"
+import "./src/css/footer-style.css"
+import "./src/css/header-style.css"
+
+import "./src/js/translations/translations.js"
+import "./src/js/components/block-review.js"
+import "./src/js/components/block-favorite.js"
+import "./src/js/components/block-info.js"
+import "./src/js/components/footer.js"
+import "./src/js/components/header.js"

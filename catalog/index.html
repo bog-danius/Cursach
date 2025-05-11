@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Catalog</title>
+</head>
+<body>
+<div id="preloader">
+    <div class="loader"></div>
+</div>
+
+<header class="header">
+    <widget-header></widget-header>
+</header>
+<main class="main">
+    <div class="main-container">
+
+        <div class="navigation-buttons">
+            <button id="btnCatalog" class="nav-btn" style="position: relative;">
+                <a href="../cart/index.html" class="nav-btn-link" >Корзина</a>
+                <span id="cart-count-badge" class="cart-badge" style="display: none;">0</span>
+            </button>
+            <button id="btnFavorites" class="nav-btn"><a href="favorite/index.html" class="nav-btn-link">Избранное</a></button>
+        </div>
+        <p class="main-container-text">Каталог</p>
+
+        <input type="text" id="search" placeholder="Поиск товаров">
+
+        <div class="price-filter">
+            <p class="main-container-text">Цена:</p>
+            <input type="number" id="minPrice" placeholder="От" min="0" class="price-filter-category">
+            <p>-</p>
+            <input type="number" id="maxPrice" placeholder="До" min="0" class="price-filter-category">
+        </div>
+
+        <label for="sort"></label>
+        <section>
+            <select id="sort">
+                <option value="default">Сортировать по</option>
+                <option value="name">По имени</option>
+                <option value="price">По цене</option>
+                <option value="rating">По рейтингу</option>
+            </select>
+
+            <label for="sortCategory"></label>
+            <select id="sortCategory">
+                <option value="default">Все категории</option>
+                <option value="SMM">SMM</option>
+                <option value="Медиа">Медиа</option>
+                <option value="Реклама">Реклама</option>
+                <option value="Радио">Радио</option>
+                <option value="Видео">Видео</option>
+                <option value="Аудио">Аудио</option>
+                <option value="PR">PR</option>
+                <option value="Стриминг">Стриминг</option>
+                <option value="Ивенты">Ивенты</option>
+                <option value="Сети">Сети</option>
+                <option value="Контент">Контент</option>
+                <option value="Аналитика">Аналитика</option>
+            </select>
+        </section>
+
+
+        <div id="categories"></div>
+        <div id="catalog" class="catalog"></div>
+        <div id="pagination" class="pagination"></div>
+
+        <div id="buttons">
+            <button id="reset" class="btn">Сбросить фильтры</button>
+            <button id="btnFilter" class="btn">Фильтр по цене > 300</button>
+            <button id="btnReduce" class="btn">Общая стоимость</button>
+            <button id="btnEvery" class="btn">Все товары > 400</button>
+            <button id="btnFind" class="btn">Найти первый товар > 450</button>
+            <button id="btnTop3" class="btn">Топ 3 дешевых</button>
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <widget-footer></widget-footer>
+</footer>
+<script>
+</script>
+<script type="module" src="catalog-index.js"></script>
+</body>
+</html>

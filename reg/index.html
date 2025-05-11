@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+    <title>Registration</title>
+</head>
+<body>
+<header class="header">
+    <widget-header></widget-header>
+</header>
+<main class="main">
+    <section class="container" id="container">
+        <div class="form-box login">
+            <form action="#" class="form-box-login" id="loginForm">
+                <p class="form-box-logo">Login</p>
+                <div class="input-box">
+                    <input type="text" class="input-login" placeholder="Username" id="loginUsername" required>
+                </div>
+                <div class="input-box">
+                    <input type="password" class="input-login" placeholder="Password" id="loginPassword" required>
+                </div>
+                <div class="form-box-login-forgot">
+                    <a href="#" class="form-box-login-forgot-link">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+            </form>
+        </div>
+
+        <div class="form-box register">
+            <form action="#" class="form-box-register"  id="registrationForm">
+                <p class="form-box-logo">Registration</p>
+                <div class="input-box">
+                    <input type="text" class="input-login" placeholder="First Name*" required>
+                </div>
+                <div class="input-box">
+                    <input type="text" class="input-login" placeholder="Last Name*" required>
+                </div>
+                <div class="input-box">
+                    <input type="text" class="input-login" placeholder="Middle name">
+                </div>
+                <div class="input-box">
+                    <input type="tel" class="input-login" placeholder="Phone Number (Belarus only)*"
+                           pattern="\+375[0-9]{9}" required>
+                    <div class="error-message">Please enter a valid Belarusian phone number (+375XXXXXXXXX)</div>
+                </div>
+                <div class="input-box">
+                    <input type="email" class="input-login" placeholder="Email*" required>
+                    <div class="error-message">Please enter a valid email address</div>
+                </div>
+                <div class="input-box">
+                    <input type="date" class="input-login" placeholder="Date of Birth*" required
+                           max="">
+                    <div class="error-message">You must be at least 16 years old</div>
+                </div>
+                <div class="gener-password">
+                    <label>
+                        <input type="radio" name="passwordOption" value="manual" checked> Задать пароль вручную
+                    </label>
+                    <label>
+                        <input type="radio" name="passwordOption" value="auto"> Сгенерировать
+                    </label>
+                </div>
+                <div id="passwordFields">
+                    <div class="input-box">
+                        <input type="password" id="password" class="input-login"
+                               placeholder="Пароль (8-20 символов)*"
+                               required>
+                        <div class="error-message">Пароль не соответствует требованиям</div>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" id="confirmPassword" class="input-login"
+                               placeholder="Повторите пароль*" required>
+                        <div class="error-message">Пароли не совпадают</div>
+                    </div>
+                </div>
+                <div class="input-box nickname-section">
+                    <input type="text" class="input-login" placeholder="Nickname*" id="nickname_gen" required>
+                    <button type="button" class="btn-name-for-nickname">Generate New</button>
+                </div>
+                <div class="input-box">
+                    <label class="terms-label">
+                        <input type="checkbox" id="terms-checkbox" required>
+                        I agree to the <a href="#" class="terms-link" id="openModal">Privacy Policy</a>*
+                    </label>
+                </div>
+                <div id="privacyPopup" class="popup">
+                    <div class="popup-content">
+                        <span id="closePopup" class="popup-close">&times;</span>
+                        <h2>Privacy Policy</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis fuga fugiat harum id
+                            laborum laudantium maiores odit possimus sapiente, sequi, similique sit tenetur unde. Nam
+                            quae sapiente soluta suscipit veritatis.</p>
+                    </div>
+                </div>
+                <button type="submit" class="btn">Register</button>
+            </form>
+        </div>
+
+        <div class="toggle-box">
+            <div class="toggle-panel toggle-left">
+                <p class="toggle-panel-logo">Hello, Welcome!</p>
+                <p class="toggle-panel-info">Don't have an account?</p>
+                <button class="btn register-btn" id="registerBtn">Register</button>
+            </div>
+
+            <div class="toggle-panel toggle-right">
+                <p class="toggle-panel-logo">Welcome Back!</p>
+                <p class="toggle-panel-info">Already have an account?</p>
+                <button class="btn login-btn" id="loginBtn">Login</button>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <widget-footer></widget-footer>
+</footer>
+<script>
+
+</script>
+<script type="module" src="registr-index.js"></script>
+</body>
+</html>
