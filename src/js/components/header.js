@@ -82,13 +82,13 @@ class Header extends HTMLElement {
         console.log(userData);
         const userInfoHtml = userData
             ? `<div class="user-info">
-                    <span class="nav-link">Welcome, ${userData.firstName} (${userData.nickname})</span>
+                    <span class="header__nav-list-link">Welcome, ${userData.firstName} (${userData.nickname})</span>
                     <button id="logoutBtn" class="get-tickets1">Logout</button>
                </div>`
-            : `<a href="/reg/index.html" class="nav-link">Login</a>`;
+            : `<a href="/reg/index.html" class="header__nav-list-link">Login</a>`;
 
         const adminLink = userData && userData.role === "admin"
-            ? `<li><a href="../../../admin/index.html" class="nav-link">Админ-панель</a></li>`
+            ? `<li><a href="../../../admin/index.html" class="header__nav-list-link">Админ-панель</a></li>`
             : '';
 
         this.innerHTML = `
@@ -106,10 +106,13 @@ class Header extends HTMLElement {
                         <li><a href="../../../catalog/index.html" class="header__nav-list-link">${translations[currentLang].shop}</a></li>
                         <li><a href="../../../reg/index.html" class="header__nav-list-link">${translations[currentLang].registration}</a></li>
                         <li><a href="#" class="header__nav-list-link">${translations[currentLang].contact}</a></li>
-                        <li class="nav-link">${userInfoHtml}</li>
-                        <li><a href="/feedback/index.html" class="nav-link">Отзывы</a></li>
+                        <li><a href="/feedback/index.html" class="header__nav-list-link">Отзывы</a></li>
                         ${adminLink}
+                    </ul>
                     <div class="toggle-container">
+                        <ul>
+                           <li class="header__nav-list-link">${userInfoHtml}</li>
+                        </ul>
                         <input type="checkbox" id="theme-switch" class="toggle-checkbox" />
                         <label for="theme-switch" class="toggle-label">
                             <span class="icon sun">☀️</span>

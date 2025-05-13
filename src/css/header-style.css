@@ -73,8 +73,22 @@
 .toggle-container {
     display: flex;
     align-items: center;
+    gap: 30px;
 }
-
+.get-tickets1{
+    border-radius: 3px;
+    border: 1px solid var(--third-color);
+    color: var(--primary-color);
+    font-family: var(--font-family-sans-serif), serif;
+    line-height: 20px;
+    padding: 5px 10px;
+    background: rgba(0, 0, 0, 0);
+}
+.user-info{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
 .toggle-checkbox {
     display: none;
 }
