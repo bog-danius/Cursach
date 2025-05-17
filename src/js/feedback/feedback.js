@@ -41,7 +41,7 @@ async function submitReview() {
 
     await fetch(FEEDBACK_URL, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {"Content-Type": "application/json"},
         body: JSON.stringify({
             userId: user.id,
             productId,

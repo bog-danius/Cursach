@@ -10,4 +10,19 @@
         width: 50%;
     }
 }
+@media (max-width: 768px) {
+    .catalog-item-inf {
+        line-height: 24px;
+        font-size: 11px
+    }
+
+    .catalog-item-line {
+        width: 80%;
+    }
+
+    .catalog-item-img {
+        width: 280px;
+        height: 386px
+    }
+}
 

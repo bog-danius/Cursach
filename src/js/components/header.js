@@ -48,7 +48,6 @@ class Header extends HTMLElement {
 
     _setupEventListeners() {
         const toggleButton = this.querySelector("#theme-switch");
-
         if (toggleButton) {
             toggleButton.removeEventListener("change", this._themeSwitchHandler);
             toggleButton.addEventListener("change", this._themeSwitchHandler);
@@ -57,6 +56,47 @@ class Header extends HTMLElement {
                 document.documentElement.classList.add("dark-theme");
                 toggleButton.checked = true;
             }
+        }
+
+        const navLinks = this.querySelectorAll(".header__nav-list-link");
+        navLinks.forEach(link => {
+            link.addEventListener("click", () => {
+                this._closeMobileMenu();
+            });
+        });
+    }
+
+    _closeMobileMenu() {
+        const burgerToggle = this.querySelector("#burger-toggle");
+        if (burgerToggle) {
+            burgerToggle.checked = false;
+            this._toggleMobileMenu(false);
+        }
+    }
+
+    _toggleMobileMenu(show) {
+        const navbar = this.querySelector(".header__nav");
+        const overlay = this.querySelector(".overlay");
+        const body = document.body;
+
+        if (show) {
+            navbar.style.display = "flex";
+            overlay.style.display = "block";
+            body.style.overflow = "hidden";
+            setTimeout(() => {
+                navbar.style.opacity = "1";
+                navbar.style.transform = "translateY(0)";
+                overlay.style.opacity = "1";
+            }, 10);
+        } else {
+            navbar.style.opacity = "0";
+            navbar.style.transform = "translateY(-20px)";
+            overlay.style.opacity = "0";
+            setTimeout(() => {
+                navbar.style.display = "none";
+                overlay.style.display = "none";
+                body.style.overflow = "";
+            }, 300);
         }
     }
 
@@ -68,18 +108,21 @@ class Header extends HTMLElement {
                 rocc: "ROCC",
                 shop: "Shop",
                 registration: "Registration",
-                contact: "Contact"
+                contact: "Contact",
+                reviews: "Reviews",
+                admin: "Admin-panel"
             },
             ru: {
                 rocc: "Главная",
                 shop: "Магазин",
                 registration: "Регистрация",
-                contact: "Контакты"
+                contact: "Контакты",
+                reviews: "Отзывы",
+                admin: "Админ-панель"
             }
         };
 
         const userData = JSON.parse(localStorage.getItem("loggedInUser"));
-        console.log(userData);
         const userInfoHtml = userData
             ? `<div class="user-info">
                     <span class="header__nav-list-link">Welcome, ${userData.firstName} (${userData.nickname})</span>
@@ -88,7 +131,7 @@ class Header extends HTMLElement {
             : `<a href="/reg/index.html" class="header__nav-list-link">Login</a>`;
 
         const adminLink = userData && userData.role === "admin"
-            ? `<li><a href="../../../admin/index.html" class="header__nav-list-link">Админ-панель</a></li>`
+            ? `<li><a href="../../../admin/index.html" class="header__nav-list-link">${translations[currentLang].admin}</a></li>`
             : '';
 
         this.innerHTML = `
@@ -99,6 +142,7 @@ class Header extends HTMLElement {
                     <span></span>
                     <span></span>
                 </label>
+                <div class="overlay"></div>
 
                 <nav class="header__nav">
                     <ul class="header__nav-list">
@@ -106,7 +150,7 @@ class Header extends HTMLElement {
                         <li><a href="../../../catalog/index.html" class="header__nav-list-link">${translations[currentLang].shop}</a></li>
                         <li><a href="../../../reg/index.html" class="header__nav-list-link">${translations[currentLang].registration}</a></li>
                         <li><a href="#" class="header__nav-list-link">${translations[currentLang].contact}</a></li>
-                        <li><a href="/feedback/index.html" class="header__nav-list-link">Отзывы</a></li>
+                        <li><a href="/feedback/index.html" class="header__nav-list-link">${translations[currentLang].reviews}</a></li>
                         ${adminLink}
                     </ul>
                     <div class="toggle-container">
@@ -122,6 +166,20 @@ class Header extends HTMLElement {
                 </nav>
             </div>
         `;
+
+        const burgerToggle = this.querySelector("#burger-toggle");
+        if (burgerToggle) {
+            burgerToggle.addEventListener("change", (e) => {
+                this._toggleMobileMenu(e.target.checked);
+            });
+        }
+
+        const overlay = this.querySelector(".overlay");
+        if (overlay) {
+            overlay.addEventListener("click", () => {
+                this._closeMobileMenu();
+            });
+        }
     }
 }
 

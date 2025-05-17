@@ -5,33 +5,35 @@
     z-index: 1000;
 }
 
-.burger-checkbox {
-    display: none;
-}
-
 .burger-menu {
     display: none;
     flex-direction: column;
     justify-content: space-between;
     width: 30px;
-    height: 22px;
+    height: 21px;
+    background: none;
+    border: none;
     cursor: pointer;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    z-index: 1100;
+    padding: 0;
+    z-index: 101;
+    position: relative;
+}
+
+.burger-checkbox {
+    display: none;
 }
 
 .burger-menu span {
     display: block;
+    width: 100%;
     height: 3px;
-    background-color: var(--primary-color);
-    border-radius: 3px;
-    transition: 0.3s;
+    background: white;
+    transition: all 0.3s ease;
+    transform-origin: left center;
 }
 
 .burger-checkbox:checked + .burger-menu span:nth-child(1) {
-    transform: rotate(45deg) translate(8px, 5px);
+    transform: rotate(45deg) translate(0px, -2px);
 }
 
 .burger-checkbox:checked + .burger-menu span:nth-child(2) {
@@ -39,13 +41,27 @@
 }
 
 .burger-checkbox:checked + .burger-menu span:nth-child(3) {
-    transform: rotate(-45deg) translate(9px, -5px);
+    transform: rotate(-45deg) translate(0px, 2px);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 98;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 .header__nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: all 0.3s ease;
     gap: 40px;
 }
 
@@ -139,30 +155,41 @@
 }
 
 @media (max-width: 768px) {
-
     .burger-menu {
         display: flex;
     }
 
     .header__nav {
-        flex-direction: column;
-        align-items: center;
-        display: none;
-        position: absolute;
-        top: 60px;
+        position: fixed;
+        top: 80px;
         left: 0;
         right: 0;
         background-color: var(--secondary-color);
-        padding: 30px 0;
-        z-index: 1000;
-    }
-
-    .burger-checkbox:checked ~ .header__nav {
-        display: flex;
+        padding: 30px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        display: none;
+        opacity: 0;
+        transform: translateY(-20px);
+        z-index: 99;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
     }
 
     .header__nav-list {
         flex-direction: column;
-        gap: 20px;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .toggle-container {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .burger-checkbox:checked ~ .header__nav {
+        display: flex;
     }
 }

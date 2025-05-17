@@ -271,7 +271,17 @@
         padding: 0;
         background: transparent;
     }
-
+    .popup-content {
+        position: relative;
+        background-color: #fff;
+        margin: 22.7%;
+        padding: 20px;
+        width: 55%;
+        max-width: 500px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        text-align: center;
+    }
     .form-box {
         position: relative;
         width: 100%;

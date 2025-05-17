@@ -2,6 +2,8 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Админ-панель</title>
 </head>
 <body>
@@ -11,12 +13,12 @@
 
 <main id="adminPanel" class="main" style="display: none;">
   <h2>Добавить / Редактировать товар</h2>
-  <label for="productName"></label><input id="productName" placeholder="Название" />
-  <label for="productCategory"></label><input id="productCategory" placeholder="Категория" />
-  <label for="productPrice"></label><input id="productPrice" placeholder="Цена" type="number" />
-  <label for="productRating"></label><input id="productRating" placeholder="Рейтинг" type="number" step="0.1" min="0" max="5" />
+  <label for="productName"></label><input id="productName" placeholder="Название"  class="input"/>
+  <label for="productCategory"></label><input id="productCategory" placeholder="Категория" class="input"/>
+  <label for="productPrice"></label><input id="productPrice" placeholder="Цена" type="number" class="input"/>
+  <label for="productRating"></label><input id="productRating" placeholder="Рейтинг" type="number" step="0.1" min="0" max="5" class="input"/>
   <label for="productDescription"></label><textarea id="productDescription" placeholder="Описание"></textarea>
-  <label for="productImage"></label><input id="productImage" placeholder="URL изображения" />
+  <label for="productImage"></label><input id="productImage" placeholder="URL изображения" class="input"/>
   <button id="submitProductBtn" class="add-btn" disabled>Сохранить</button>
   <p id="productError" class="input-error"></p>
 
@@ -24,8 +26,8 @@
   <div id="productList" class="product-list"></div>
 
   <h2>Отзывы</h2>
-  <label for="filterUserId"></label><input id="filterUserId" placeholder="Фильтр по ID пользователя" />
-  <label for="filterProductId"></label><input id="filterProductId" placeholder="Фильтр по ID товара" />
+  <label for="filterUserId"></label><input id="filterUserId" placeholder="Фильтр по ID пользователя"  class="input"/>
+  <label for="filterProductId"></label><input id="filterProductId" placeholder="Фильтр по ID товара"  class="input"/>
   <button id="filterBtn" class="add-btn">Фильтровать</button>
   <button onclick="loadAllReviews()" class="add-btn">Показать все отзывы</button>
   <div id="adminReviews"></div>

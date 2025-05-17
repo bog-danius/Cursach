@@ -24,7 +24,7 @@ fetch('http://localhost:3000/services')
             const itemElement = document.createElement('div');
             itemElement.className = 'catalog-item';
             itemElement.innerHTML = `
-          <img src="${item.image}" alt="${item.name}" style="width: 335px; height: 406px">
+          <img src="${item.image}" alt="${item.name}" class="catalog-item-img">
           <div class="catalog-item-block">
               <p class="catalog-item-inf">${item.name} </p>
               <p class="catalog-item-inf">- ${item.price}$</p>

@@ -191,3 +191,44 @@ body{
     margin: 10px 0;
     align-items: center;
 }
+@media (max-width: 768px) {
+    .navigation-buttons{
+        padding: 50px 0 0 50px;
+    }
+    .main-container-text{
+        padding: 0 0 0 50px;
+    }
+    #search{
+        margin: 0 0 0 50px;
+    }
+    section{
+        padding: 0 0 20px 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .catalog{
+        padding: 0;
+    }
+    .main-container{
+        padding: 0;
+    }
+    .price-filter{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .price-filter-category{
+        margin: 0 0 0 50px;
+    }
+    .minus{
+        padding: 0 0 0 50px;
+    }
+    .btn{
+        white-space: nowrap;
+        width: 220px;
+    }
+    #buttons{
+        padding: 0 50px 50px 50px;
+    }
+
+}

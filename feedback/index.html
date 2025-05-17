@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <title>Отзывы</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Отзывы</title>
 </head>
-<body >
+<body>
 <div id="preloader">
-  <div class="loader"></div>
+    <div class="loader"></div>
 </div>
 
 <header class="header">
-  <widget-header></widget-header>
+    <widget-header></widget-header>
 </header>
 <main class="main">
-  <h1>Оставить отзыв</h1>
+    <h1>Оставить отзыв</h1>
 
-  <label for="productSelect"></label><select id="productSelect"></select>
+    <label for="productSelect"></label><select id="productSelect"></select>
 
-  <label for="reviewText"></label><textarea id="reviewText" placeholder="Ваш отзыв..."></textarea>
-  <p id="reviewError" class="input-error"></p>
+    <label for="reviewText"></label><textarea id="reviewText" placeholder="Ваш отзыв..."></textarea>
+    <p id="reviewError" class="input-error"></p>
 
-  <button id="submitReviewBtn" class="review-btn">Отправить отзыв</button>
+    <button id="submitReviewBtn" class="review-btn">Отправить отзыв</button>
 
-  <h2>Отзывы</h2>
-  <div id="feedbackList" class="feedback-container"></div>
+    <h2>Отзывы</h2>
+    <div id="feedbackList" class="feedback-container"></div>
 </main>
 
 <footer class="footer">
-  <widget-footer></widget-footer>
+    <widget-footer></widget-footer>
 </footer>
 
 <script type="module" src="feedback-index.js"></script>
