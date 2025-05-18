@@ -400,48 +400,12 @@
       "role": "admin",
       "favorites": [
         {
-          "id": "2",
-          "name": "Публикация в бьюти-блогах",
-          "category": "Медиа",
-          "price": 230,
-          "rating": 4.6,
-          "description": "Размещение вашей косметики на популярных бьюти-блогах и платформах.",
-          "image": "https://usmall.ru/image/667/03/46/2398d313503960bca6e543bc37aa35dc.jpeg"
-        },
-        {
-          "id": "3",
-          "name": "Таргетированная реклама для косметики",
-          "category": "Реклама",
-          "price": 184,
-          "rating": 4.9,
-          "description": "Настройка рекламных кампаний для целевой аудитории в косметической нише.",
-          "image": "https://usmall.ru/image/667/03/46/2398d313503960bca6e543bc37aa35dc.jpeg"
-        },
-        {
           "id": "4",
           "name": "Участие в бьюти-выставках",
           "category": "Мероприятия",
           "price": 322,
           "rating": 4.5,
           "description": "Организация участия вашего бренда в косметических выставках.",
-          "image": "https://usmall.ru/image/667/03/46/2398d313503960bca6e543bc37aa35dc.jpeg"
-        },
-        {
-          "id": "5",
-          "name": "YouTube-продвижение для бренда",
-          "category": "Видео",
-          "price": 166,
-          "rating": 4.7,
-          "description": "Увеличение охватов и вовлеченности для вашего бьюти-канала.",
-          "image": "https://usmall.ru/image/667/03/46/2398d313503960bca6e543bc37aa35dc.jpeg"
-        },
-        {
-          "id": "6",
-          "name": "Коллаборации с бьюти-блогерами",
-          "category": "Партнерства",
-          "price": 203,
-          "rating": 4.4,
-          "description": "Организация сотрудничества с популярными бьюти-инфлюенсерами.",
           "image": "https://usmall.ru/image/667/03/46/2398d313503960bca6e543bc37aa35dc.jpeg"
         },
         {
@@ -502,6 +466,16 @@
           "price": 230,
           "rating": 4.6,
           "description": "Размещение вашей косметики на популярных бьюти-блогах и платформах.",
+          "image": "https://usmall.ru/image/667/03/46/2398d313503960bca6e543bc37aa35dc.jpeg",
+          "quantity": 1
+        },
+        {
+          "id": "1",
+          "name": "Продвижение в Instagram и TikTok",
+          "category": "SMM",
+          "price": 138,
+          "rating": 4.8,
+          "description": "Комплексное продвижение вашего косметического бренда в социальных сетях.",
           "image": "https://usmall.ru/image/667/03/46/2398d313503960bca6e543bc37aa35dc.jpeg",
           "quantity": 1
         }

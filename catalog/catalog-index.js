@@ -1,7 +1,7 @@
+import "../src/css/basic-style.css"
 import "../src/css/style_catalog.css"
 import "../src/css/footer-style.css"
 import "../src/css/header-style.css"
-import "../src/css/basic-style.css"
 import "../src/css/card.css"
 
 import "../src/js/preloader/preloader.js"

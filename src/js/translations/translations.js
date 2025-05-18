@@ -1,5 +1,5 @@
 document.querySelector('widget-header').setAttribute('data-lang', 'ru');
-document.querySelector('widget-footer').setAttribute('data-lang', 'ru');
+// document.querySelector('widget-footer').setAttribute('data-lang', 'ru');
 
 const translations = {
     en: {

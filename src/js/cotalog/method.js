@@ -44,7 +44,7 @@ async function initSorting() {
 
         const searchTerm = search.value.trim();
         if (searchTerm) {
-            filters.push(`name_like=${encodeURIComponent(searchTerm)}`);
+            filters.push(`name=${encodeURIComponent(searchTerm)}`);
         }
 
         if (sort.value !== "default") {

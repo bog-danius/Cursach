@@ -1,13 +1,7 @@
 class Header extends HTMLElement {
     constructor() {
         super();
-        this._themeSwitchHandler = this._themeSwitchHandler.bind(this);
-        this._logoutHandler = this._logoutHandler.bind(this);
         this.render();
-    }
-
-    static get observedAttributes() {
-        return ['data-lang'];
     }
 
     attributeChangedCallback(name, oldValue, newValue) {
@@ -47,11 +41,9 @@ class Header extends HTMLElement {
     }
 
     _setupEventListeners() {
-        const toggleButton = this.querySelector("#theme-switch");
+        const toggleButton = document.querySelector("#theme-switch");
         if (toggleButton) {
-            toggleButton.removeEventListener("change", this._themeSwitchHandler);
-            toggleButton.addEventListener("change", this._themeSwitchHandler);
-
+            toggleButton.addEventListener("click", this._themeSwitchHandler);
             if (localStorage.getItem("theme") === "dark") {
                 document.documentElement.classList.add("dark-theme");
                 toggleButton.checked = true;
@@ -88,16 +80,14 @@ class Header extends HTMLElement {
                 navbar.style.transform = "translateY(0)";
                 overlay.style.opacity = "1";
             }, 10);
-        } else {
-            navbar.style.opacity = "0";
-            navbar.style.transform = "translateY(-20px)";
-            overlay.style.opacity = "0";
-            setTimeout(() => {
-                navbar.style.display = "none";
-                overlay.style.display = "none";
-                body.style.overflow = "";
-            }, 300);
-        }
+         } //else {
+        //     navbar.style.transform = "translateY(-20px)";
+        //     setTimeout(() => {
+        //         navbar.style.display = "none";
+        //         overlay.style.display = "none";
+        //         body.style.overflow = "";
+        //     }, 300);
+        // }
     }
 
     render() {
@@ -180,6 +170,8 @@ class Header extends HTMLElement {
                 this._closeMobileMenu();
             });
         }
+        this._themeSwitchHandler = this._themeSwitchHandler.bind(this);
+        this._logoutHandler = this._logoutHandler.bind(this);
     }
 }
 
