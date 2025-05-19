@@ -91,6 +91,7 @@ const translations = {
 };
 
 function changeLanguage(lang) {
+    localStorage.setItem('preferredLanguage', lang);
     document.documentElement.lang = lang;
 
     document.querySelectorAll('.language-btn').forEach(btn => {
@@ -100,7 +101,6 @@ function changeLanguage(lang) {
     document.querySelectorAll('widget-header, widget-footer').forEach(component => {
         component.setAttribute('data-lang', lang);
     });
-
 
     document.querySelectorAll('[data-i18n]').forEach(element => {
         const key = element.dataset.i18n;
@@ -127,11 +127,11 @@ function changeLanguage(lang) {
             }
         }
     });
-
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    changeLanguage('en');
+    const savedLanguage = localStorage.getItem('preferredLanguage') || 'en';
+    changeLanguage(savedLanguage);
 
     document.querySelectorAll('.language-btn').forEach(btn => {
         btn.addEventListener('click', () => {

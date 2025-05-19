@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+</head>
+<style></style>
+<body>
+<header class="header">
+  <widget-header></widget-header>
+</header>
+<div class="profile-container">
+  <div class="profile-form">
+    <div class="form-group">
+      <label for="nickname">Nickname</label>
+      <input type="text" id="nickname">
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email">
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone">
+    </div>
+    <div class="form-group">
+      <label for="password">New Password</label>
+      <input type="password" id="password" placeholder="Leave empty to keep current">
+    </div>
+    <button id="save-btn">Save Changes</button>
+    <div id="message" style="margin-top: 15px; color: green;"></div>
+  </div>
+</div>
+<footer class="footer">
+  <widget-footer></widget-footer>
+</footer>
+<script type="module" src="profile-index.js"></script>
+</body>
+</html>

@@ -1,7 +1,15 @@
+import profile from '../../img/img.png';
+
 class Header extends HTMLElement {
     constructor() {
         super();
+        this._themeSwitchHandler = this._themeSwitchHandler.bind(this);
+        this._logoutHandler = this._logoutHandler.bind(this);
         this.render();
+    }
+
+    static get observedAttributes() {
+        return ['data-lang'];
     }
 
     attributeChangedCallback(name, oldValue, newValue) {
@@ -41,7 +49,7 @@ class Header extends HTMLElement {
     }
 
     _setupEventListeners() {
-        const toggleButton = document.querySelector("#theme-switch");
+        const toggleButton = this.querySelector("#theme-switch");
         if (toggleButton) {
             toggleButton.addEventListener("click", this._themeSwitchHandler);
             if (localStorage.getItem("theme") === "dark") {
@@ -80,14 +88,7 @@ class Header extends HTMLElement {
                 navbar.style.transform = "translateY(0)";
                 overlay.style.opacity = "1";
             }, 10);
-         } //else {
-        //     navbar.style.transform = "translateY(-20px)";
-        //     setTimeout(() => {
-        //         navbar.style.display = "none";
-        //         overlay.style.display = "none";
-        //         body.style.overflow = "";
-        //     }, 300);
-        // }
+        }
     }
 
     render() {
@@ -100,7 +101,9 @@ class Header extends HTMLElement {
                 registration: "Registration",
                 contact: "Contact",
                 reviews: "Reviews",
-                admin: "Admin-panel"
+                admin: "Admin-panel",
+                logout: "Logout",
+                login: "Login",
             },
             ru: {
                 rocc: "Главная",
@@ -108,17 +111,21 @@ class Header extends HTMLElement {
                 registration: "Регистрация",
                 contact: "Контакты",
                 reviews: "Отзывы",
-                admin: "Админ-панель"
+                admin: "Админ-панель",
+                logout: "Выйти",
+                login: "Войти",
             }
         };
 
         const userData = JSON.parse(localStorage.getItem("loggedInUser"));
         const userInfoHtml = userData
             ? `<div class="user-info">
-                    <span class="header__nav-list-link">Welcome, ${userData.firstName} (${userData.nickname})</span>
-                    <button id="logoutBtn" class="get-tickets1">Logout</button>
+                    <a href="../../../profile/index.html" class="header__nav-list-link">
+                        <img src="${profile}" alt="ff" style="width: 32px; height: 32px">
+                    </a>
+                    <button id="logoutBtn" class="get-tickets1">${translations[currentLang].logout}</button>
                </div>`
-            : `<a href="/reg/index.html" class="header__nav-list-link">Login</a>`;
+            : `<a href="/reg/index.html" class="header__nav-list-link">${translations[currentLang].login}</a>`;
 
         const adminLink = userData && userData.role === "admin"
             ? `<li><a href="../../../admin/index.html" class="header__nav-list-link">${translations[currentLang].admin}</a></li>`
@@ -139,7 +146,7 @@ class Header extends HTMLElement {
                         <li><a href="/index.html" class="header__nav-list-link">${translations[currentLang].rocc}</a></li>
                         <li><a href="../../../catalog/index.html" class="header__nav-list-link">${translations[currentLang].shop}</a></li>
                         <li><a href="../../../reg/index.html" class="header__nav-list-link">${translations[currentLang].registration}</a></li>
-                        <li><a href="#" class="header__nav-list-link">${translations[currentLang].contact}</a></li>
+                        <li><a href="/contact/index.html" class="header__nav-list-link">${translations[currentLang].contact}</a></li>
                         <li><a href="/feedback/index.html" class="header__nav-list-link">${translations[currentLang].reviews}</a></li>
                         ${adminLink}
                     </ul>
@@ -170,8 +177,6 @@ class Header extends HTMLElement {
                 this._closeMobileMenu();
             });
         }
-        this._themeSwitchHandler = this._themeSwitchHandler.bind(this);
-        this._logoutHandler = this._logoutHandler.bind(this);
     }
 }
 

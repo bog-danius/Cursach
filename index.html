@@ -145,6 +145,23 @@
   <footer class="footer">
     <widget-footer></widget-footer>
   </footer>
+<div class="scroll-to-top" style="position: fixed; bottom: 15px; right: 15px;">
+  <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})"  aria-label="Scroll to top" type="button" style="background-color: #EDDBBE; border: 1px solid #526E3E; border-radius: 50%; transform: rotate(90deg) ;" >
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+      <path d="M12 4L4 12M4 12L12 20M4 12H20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+</div>
+<script>
+  window.addEventListener('scroll', function() {
+    const scrollToTopBtn = document.querySelector('.scroll-to-top');
+    if (window.pageYOffset > 300) {
+      scrollToTopBtn.classList.add('visible');
+    } else {
+      scrollToTopBtn.classList.remove('visible');
+    }
+  });
+</script>
 <script type="module" src="index.js"></script>
 </body>
 </html>

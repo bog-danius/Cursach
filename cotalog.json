@@ -360,20 +360,6 @@
       "cart": []
     },
     {
-      "id": "6ae5",
-      "firstName": "Fsdf",
-      "lastName": "Sdsgv",
-      "middleName": "Sdfs",
-      "phone": "+375447203020",
-      "email": "koly@gmail.com",
-      "dob": "2009-04-29",
-      "password": "diRZ&sKOW3wF",
-      "nickname": "Aqofeda",
-      "role": "user",
-      "favorites": [],
-      "cart": []
-    },
-    {
       "id": "2254",
       "firstName": "Fkjbkjlb",
       "lastName": "Djlbkjfg",
@@ -392,7 +378,7 @@
       "firstName": "Admin",
       "lastName": "Root",
       "middleName": "",
-      "phone": "+375441112233",
+      "phone": "+375447777777",
       "email": "admin@example.com",
       "dob": "1990-01-01",
       "password": "Admin@123",
