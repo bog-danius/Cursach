@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="https://cdn.discordapp.com/attachments/1246484201247871047/1375933145026662430/image.png?ex=68337d19&is=68322b99&hm=935fc672f26b582a2e8fdc11f7e4b66b19eca235962d60c9fa9b0bb638655520&" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Cursach</title>
@@ -18,6 +19,17 @@
   <widget-header></widget-header>
 </header>
 <main>
+  <div class="accessibility-panel">
+    <div class="scale-controls">
+      <button class="accessibility-btn" data-scale="0.8">A-</button>
+      <button class="accessibility-btn active" data-scale="1">A</button>
+      <button class="accessibility-btn" data-scale="1.2">A+</button>
+    </div>
+    <button class="accessibility-btn" data-theme="beige">Бежевая</button>
+    <button class="accessibility-btn" data-theme="blue">Голубая</button>
+
+    <button class="accessibility-btn toggle-images-btn">Отключить изображения</button>
+  </div>
   <section class="hero flex center-vertical center-horizontal upend">
     <img src="./src/img/logo.png" alt="Cursach Logo" class="hero__logo">
     <p class="hero__logo-info text-bold text-style-normal" data-i18n="natural_care">Natural + Sustainable Oral

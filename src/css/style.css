@@ -14,7 +14,7 @@
 }
 
 .hero__logo-info {
-    color: var(--primary-color);
+    color: var(--third-color);
     font-family: var(--font-family-sans-serif), serif;
     line-height: 62px;
     font-size: clamp(30px, 5vw, 57px);
@@ -94,13 +94,69 @@
     padding: 268px 0;
 }
 
+.no-images .hero,
+.no-images .slider,
+.no-images .shop,
+.no-images .connected {
+    background-image: none !important;
+}
 .slider__wrapper {
     display: flex;
     will-change: transform;
     animation: marquee 10s linear infinite;
     min-width: 200%;
 }
+.header {
+    font-size: calc(1em * var(--text-scale, 1));
+}
 
+.header * {
+    font-size: inherit !important;
+}
+.catalog-item {
+    font-size: calc(1em * var(--text-scale, 1)) !important;
+}
+
+.catalog-item * {
+    font-size: inherit !important;
+}
+.no-images img,
+.no-images [style*="background-image"],
+.no-images .icon {
+    display: none !important;
+}
+
+.image-description {
+    display: none;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px dashed #ccc;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.no-images .image-description {
+    display: block;
+}
+
+
+.dark-theme .image-description {
+    background-color: #333;
+    color: #fff;
+    border-color: #666;
+}
+
+.beige-theme .image-description {
+    background-color: #f5f5dc;
+    color: #8B4513;
+    border-color: #CD853F;
+}
+
+.blue-theme .image-description {
+    background-color: #ADD8E6;
+    color: #00008B;
+    border-color: #0000FF;
+}
 .slider__text {
     color: var(--third-color);
     font-family: var(--font-family-sans-serif), serif;
@@ -259,14 +315,14 @@
 }
 
 .connected__logo {
-    color: var(--primary-color);
+    color: var(--third-color);
     text-align: center;
     font-family: var(--font-family-sans-serif), serif;
     line-height: 44px;
 }
 
 .connected__info {
-    color: var(--primary-color);
+    color: var(--third-color);
     text-align: center;
     font-family: var(--font-family-sans-serif), serif;
     line-height: 22px;

@@ -44,18 +44,36 @@ class Header extends HTMLElement {
     }
 
     _themeSwitchHandler() {
-        const isDark = document.documentElement.classList.toggle("dark-theme");
+        const htmlElement = document.documentElement;
+        const isDark = !htmlElement.classList.contains("dark-theme");
+        htmlElement.classList.toggle("dark-theme", isDark);
         localStorage.setItem("theme", isDark ? "dark" : "light");
+
+        const toggleButton = this.querySelector("#theme-switch");
+        if (toggleButton) {
+            toggleButton.checked = isDark;
+        }
+
+        document.dispatchEvent(new CustomEvent('themeChanged', {
+            detail: { isDark }
+        }));
     }
 
     _setupEventListeners() {
+
+        const oldToggle = this.querySelector("#theme-switch");
+        if (oldToggle) {
+            oldToggle.removeEventListener("click", this._themeSwitchHandler);
+        }
+
+        const savedTheme = localStorage.getItem("theme");
+        const isDark = savedTheme === "dark";
+        document.documentElement.classList.toggle("dark-theme", isDark);
+
         const toggleButton = this.querySelector("#theme-switch");
         if (toggleButton) {
+            toggleButton.checked = isDark;
             toggleButton.addEventListener("click", this._themeSwitchHandler);
-            if (localStorage.getItem("theme") === "dark") {
-                document.documentElement.classList.add("dark-theme");
-                toggleButton.checked = true;
-            }
         }
 
         const navLinks = this.querySelectorAll(".header__nav-list-link");
@@ -180,4 +198,6 @@ class Header extends HTMLElement {
     }
 }
 
-customElements.define('widget-header', Header);
+document.addEventListener('DOMContentLoaded', () => {
+    customElements.define('widget-header', Header);
+});
