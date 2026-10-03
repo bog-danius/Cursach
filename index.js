@@ -13,6 +13,9 @@ import "./src/js/components/block-info.js"
 import "./src/js/components/footer.js"
 import "./src/js/components/header.js"
 
+import "./src/css/basic-style.css"
+import "./src/css/style.css"
+
 fetch('http://localhost:3000/services')
     .then(response => response.json())
     .then(data => {
