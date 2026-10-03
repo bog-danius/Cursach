@@ -1,3 +1,17 @@
+## 📄 Лицензия
+
+Этот проект распространяется под лицензией **Donationware**.
+
+- ✅ Бесплатное использование
+- ✅ Разрешено коммерческое использование
+- ❌ Модификация и декомпиляция запрещены
+- 💛 Если проект оказался полезным — вы можете поддержать автора
+
+Подробнее — в файле [LICENSE](LICENSE).
+
+[![License: Donationware](https://img.shields.io/badge/License-Donationware-yellow.svg)](LICENSE)
+
+
 # Cursach
 # Макет
 [![Figma Preview](https://img.shields.io/badge/Figma-Preview-0ACF83?style=for-the-badge&logo=figma&logoColor=white)](https://www.figma.com/design/GK6DNhhC3nPrcKYAilSbBM/ROCC--Copy-?node-id=0-1&p=f&t=vbazjZQiTCk7f1ww-0)
